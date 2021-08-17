@@ -1,0 +1,59 @@
+@import 'colors/ui_colors.scss';
+
+.contactList-container{
+//height: 75vh;
+    width: 25vw;
+    min-width: 12rem;
+    height: 94vh;
+    overflow: auto;
+    
+    @media (max-width: 40em) {
+        width: 100vw;
+    }
+    background-color: $secondary_ui;
+}
+.contact-list{
+    
+    p{
+        margin: 0px;
+    }
+}
+.contact-block{
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    
+}
+.contact-image{
+    margin: 0.5em;
+    img{
+        border-radius: 50%;
+        height: fill;
+        box-shadow: 0px 0px 10px 0.3px hsla(0, 0%, 89%, 0.212);
+    }
+}
+.contact-info{
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .contact-name{
+        margin: 0.5em 0.5em 0.5em;
+        color: darken($secondary_ui_text, 5%);
+    }
+    .message-prewiev{
+        margin: 0.5em 0.5em 0.5em ;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        color: transparentize(lighten($secondary_ui_text, 2%),0.3);
+        font-size: 14px;
+    }
+    border-bottom: 2px groove transparentize(mix($secondary_ui, hsla(0, 0%, 81%, 0.795)), 0.6%);
+    
+}
+.contact-block:hover{
+    background-color: $secondary_ui_element_hover;
+    pointer-events: auto;
+    cursor: pointer;
+}

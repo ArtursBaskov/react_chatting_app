@@ -1,0 +1,20 @@
+.form-button{
+    width: 80px;
+    min-width: 80px;
+    max-width: 80px;
+    height: 30px;
+    border: none;
+    background-color: hsl(180, 35%, 35%);
+    color: hsl(0, 0%, 85%);
+
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.form-button:hover{
+    background-color: hsl(180, 35%, 25%);
+}
+.form-button:active{
+    background-color: hsla(180, 35%, 25%, 0.699);
+}

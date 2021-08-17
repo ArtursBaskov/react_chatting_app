@@ -1,0 +1,26 @@
+$inpt-border-color: hsla(0, 0%, 6%, 0.671);
+.form-label{
+    color: hsl(199, 10%, 61%);
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    
+}
+.form-inpt{
+    border-top: 1.5px solid $inpt-border-color;
+    border-right: 1.5px solid $inpt-border-color;
+    border-bottom: 1.5px solid $inpt-border-color;
+    border-left: 1.5px solid $inpt-border-color;
+
+    border-radius: 3px;
+
+    background-color: hsl(0, 0%, 9%);
+    color: hsl(204, 83%, 93%);
+
+    height: 25px;
+    padding: 2px;
+}
+.form-inpt:focus{
+    outline: none;
+    background-color: hsl(0, 0%, 10%);
+}

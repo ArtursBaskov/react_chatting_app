@@ -1,0 +1,17 @@
+.form-background{
+    //background-color: rgb(204, 2, 79) !important;
+    background-image: url("/src/assets/back_image.jpg");
+    margin: auto;
+    margin-top: 10px;
+    //margin-top: 2em;
+    //margin-bottom: 2em;
+    width: 70% !important;
+    height: 610px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: -1px 0px 5px 1px hsla(0, 1%, 71%, 0.205);
+    @media (max-width: 60em) {
+        width: 100% !important;
+    }
+}

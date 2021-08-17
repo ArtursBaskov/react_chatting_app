@@ -1,0 +1,26 @@
+@import 'colors/ui_colors.scss';
+nav{
+    background-color: $primary_ui;
+    height: 2.5rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    a{
+       margin: 6px 1em 0 1em;
+       color: $primary_ui_text;
+       text-decoration: none;
+
+    }
+    a:hover{
+        color: $primary_ui_text_hover;
+
+    }
+    .activePage{
+        color: hsl(193, 18%, 51%);
+    }
+}

@@ -1,0 +1,14 @@
+//background
+$background: hsl(0, 0%, 10%);
+
+    //ui elements
+$primary_ui: lighten($background, 5%);
+$primary_ui_text: hsl(193, 100%, 92%);
+$primary_ui_text_hover: hsl(193, 100%, 97%);
+
+$secondary_ui: lighten($background, 10%);
+$secondary_ui_element_hover: lighten($secondary_ui, 5%);
+$secondary_ui_text: hsl(200, 100%, 92%);
+$secondary_ui_text_hover: hsl(193, 100%, 97%);
+//
+

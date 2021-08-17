@@ -1,0 +1,385 @@
+.draggable {
+  position: relative;
+}
+
+.drag-node {
+  outline: none;
+  border: none;
+  padding: 0;
+  background-color: turquoise;
+  position: absolute;
+  right: 0px;
+  width: 1px;
+  height: 100%;
+}
+
+.drag-node:hover {
+  cursor: ew-resize;
+}
+
+nav {
+  background-color: #262626;
+  height: 2.5rem;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2px solid black;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.links a {
+  margin: 6px 1em 0 1em;
+  color: #d6f6ff;
+  text-decoration: none;
+}
+.links a:hover {
+  color: #f0fcff;
+}
+.links .activePage {
+  color: #6c8f99;
+}
+
+.reg-log-form, .resized {
+  width: 31em;
+  margin: auto;
+  margin-top: 3rem;
+}
+@media (max-width: 35em) {
+  .reg-log-form, .resized {
+    width: 100%;
+  }
+}
+.reg-log-form form, .resized form {
+  border-radius: 2px !important;
+  background-color: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reg-log-form .form-inputs, .resized .form-inputs {
+  width: 30em;
+  margin: 2em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reg-log-form .field-group, .resized .field-group {
+  margin: 0.8em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20em;
+  height: 5.2em;
+}
+.reg-log-form .field-group input, .resized .field-group input {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin: auto;
+  height: 30px;
+}
+.reg-log-form .field-group label, .resized .field-group label {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
+  margin-bottom: 5px;
+}
+.reg-log-form .field-group p, .resized .field-group p {
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  -webkit-animation: appear 0.3s ease-in forwards;
+          animation: appear 0.3s ease-in forwards;
+}
+.reg-log-form .field-group .warning, .resized .field-group .warning {
+  color: #b44646;
+}
+.reg-log-form .field-group .mediumPass, .resized .field-group .mediumPass {
+  color: #b48c50;
+}
+.reg-log-form .field-group .strongPass, .resized .field-group .strongPass {
+  color: #6cb450;
+}
+.reg-log-form .form-buttons, .resized .form-buttons {
+  margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reg-log-form .form-buttons button, .resized .form-buttons button {
+  margin: 0 2em 0 2em;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+}
+
+@keyframes appear {
+  100% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+}
+.form-label {
+  color: #929fa5;
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.form-inpt {
+  border-top: 1.5px solid rgba(15, 15, 15, 0.671);
+  border-right: 1.5px solid rgba(15, 15, 15, 0.671);
+  border-bottom: 1.5px solid rgba(15, 15, 15, 0.671);
+  border-left: 1.5px solid rgba(15, 15, 15, 0.671);
+  border-radius: 3px;
+  background-color: #171717;
+  color: #def0fc;
+  height: 25px;
+  padding: 2px;
+}
+
+.form-inpt:focus {
+  outline: none;
+  background-color: #1a1a1a;
+}
+
+.form-button {
+  width: 80px;
+  min-width: 80px;
+  max-width: 80px;
+  height: 30px;
+  border: none;
+  background-color: #3a7878;
+  color: #d9d9d9;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #295656;
+}
+
+.form-button:active {
+  background-color: rgba(41, 86, 86, 0.699);
+}
+
+.contactList-container {
+  width: 25vw;
+  min-width: 12rem;
+  height: 94vh;
+  overflow: auto;
+  background-color: #333333;
+}
+@media (max-width: 40em) {
+  .contactList-container {
+    width: 100vw;
+  }
+}
+
+.contact-list p {
+  margin: 0px;
+}
+
+.contact-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 5em;
+}
+
+.contact-image {
+  margin: 0.5em;
+}
+.contact-image img {
+  border-radius: 50%;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill;
+  -webkit-box-shadow: 0px 0px 10px 0.3px rgba(227, 227, 227, 0.212);
+          box-shadow: 0px 0px 10px 0.3px rgba(227, 227, 227, 0.212);
+}
+
+.contact-info {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  border-bottom: 2px groove rgba(113, 113, 113, 0.2975);
+}
+.contact-info .contact-name {
+  margin: 0.5em 0.5em 0.5em;
+  color: #bde9ff;
+}
+.contact-info .message-prewiev {
+  margin: 0.5em 0.5em 0.5em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgba(224, 245, 255, 0.7);
+  font-size: 14px;
+}
+
+.contact-block:hover {
+  background-color: #404040;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.message-block {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 75vw !important;
+}
+.message-block img {
+  height: 3rem;
+  max-width: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.message-block h1 {
+  margin: 0px;
+  margin-bottom: 1rem;
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #a3e0ff;
+}
+
+.message-content {
+  margin: 0 20% 0 0;
+}
+.message-content p {
+  margin: 0px;
+  font-size: 1em;
+  color: #e0f5ff;
+}
+
+.message-block:hover {
+  background-color: #171717;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10%;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.295);
+}
+
+.form-background {
+  background-image: url("/src/assets/back_image.jpg");
+  margin: auto;
+  margin-top: 10px;
+  width: 70% !important;
+  height: 610px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+  -webkit-box-shadow: -1px 0px 5px 1px rgba(182, 180, 180, 0.205);
+          box-shadow: -1px 0px 5px 1px rgba(182, 180, 180, 0.205);
+}
+@media (max-width: 60em) {
+  .form-background {
+    width: 100% !important;
+  }
+}
+
+.contacts-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
